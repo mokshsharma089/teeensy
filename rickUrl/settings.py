@@ -25,7 +25,7 @@ SECRET_KEY = 'y_ci26@$so^^)85d@spj3*d+_bx_1ux318t2t^*4@n-jst10h1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','teeensy.herokuapp.com','https://teeensy.herokuapp.com']
+ALLOWED_HOSTS = ['teeensy.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -49,6 +49,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+ROOT_URLCONF = 'rickUrl.urls'
+ROOT_HOSTCONF = 'rickUrl.hosts'
+DEFAULT_HOST = 'www'
+DEFAULT_REDIRECT_URL = "https://teeensy.herokuapp.com/" 
+PARENT_HOST = "teeensy.herokuapp.com"
 
 ROOT_URLCONF = 'rickUrl.urls'
 
