@@ -1,0 +1,13 @@
+{% extends 'home/base.html' %}
+{% block content %}
+<h1>Short Urls Are Better</h1>
+    <form method='POST' action='.'> {% csrf_token %}
+        <br /><hr><br />
+        {{ form.as_p }}
+        <input type='submit' value='Shorten' >
+    </form>
+    <hr>
+    <a href="http://127.0.0.1:8000/{{object.shortcode}}" style="color:rgb(226, 10, 10)">http://127.0.0.1:8000/{{object.shortcode}}</a>
+    <br/><br />
+<a href=".">Clear</a>
+{% endblock %}

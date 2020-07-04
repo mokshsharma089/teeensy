@@ -1,0 +1,16 @@
+
+{% extends 'home/base.html' %}
+{% block content %}
+
+
+    <form method='POST' action='.'> 
+        {% csrf_token %}
+        <br /><hr><br />
+              {{ form.as_p }}
+        <br /><hr><br />
+        <input type='submit' value='Shorten' >
+    </form>
+    <br /><hr><br />
+
+    
+{% endblock %}
