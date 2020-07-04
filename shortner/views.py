@@ -1,8 +1,8 @@
 from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse,HttpResponseRedirect
-from.models import rickUrl
+from shortner.models import rickUrl
 from django.views import View
-from .forms import SubmitUrlForm
+from shortner.forms import SubmitUrlForm
 # Create your views here.
 
 class HomeView(View):
