@@ -27,7 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['teeensy.herokuapp.com','127.0.0.1']
 
-
+ADMINS = [
+    ('moksh','moksh.sharma089@gmail.com')
+]
 # Application definition
 
 INSTALLED_APPS = [
