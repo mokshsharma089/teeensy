@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['teeensy.herokuapp.com','127.0.0.1']
 
 ADMINS = [
-    ('moksh','moksh.sharma089@gmail.com')
+    ('moksh','moksh,sharma.089@gmail.com')
 ]
 # Application definition
 
@@ -86,8 +86,12 @@ WSGI_APPLICATION = 'rickUrl.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'hleqpeny',
+        'USER':'hleqpeny',
+        'PASSWORD':'WyWbtoiR2NViPnmvkJlzlUKD_13Vi8Ie',
+        'HOST':'satao.db.elephantsql.com',
+        'PORT':'5432'
     }
 }
 
