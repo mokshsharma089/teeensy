@@ -1,7 +1,12 @@
 {% extends 'home/base.html' %}
 {% block content %}
 <h1>Already existed</h1>
+<br /><hr><br />
+    <div style="width:100%;word-wrap: break-word;">
     <p>{{object.url}}</p>
     <a href="{{object.url}}">https://teeensy.herokuapp.com/{{object.shortcode}}</a>
-    <hr><a href=".">NEW</a>
+    </div>
+    <br /><hr><br />
+    <a href="." class="btn btn-primary">NEW</a>
+    <br /><hr><br />
 {% endblock %}
