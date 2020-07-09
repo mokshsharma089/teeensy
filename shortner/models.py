@@ -33,4 +33,4 @@ class rickUrl(models.Model):
             self.url="http://"+self.url
         super(rickUrl,self).save(*args,**kwargs)
     def __str__(self):
-        return str(str(self.timestamp)+ "---->" + self.url)
+        return str(str(self.shortcode)+ " ===>> " + self.url)
