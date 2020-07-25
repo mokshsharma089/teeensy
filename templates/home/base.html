@@ -21,7 +21,17 @@
     </div>
      <br /><br />
     <h6 style="margin-left:35%;width:30%;text-align:center;">Made by<strong> Moksh Sharma</strong></h6>
-
+    <script>
+        function Clipboard_CopyTo(value) {
+            var tempInput = document.createElement("input");
+            tempInput.value = "https://teeensy.herokuapp.com/"+value;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Copied Teeensy Url to clipboard");
+}
+        </script>
                 
         
 </body>
